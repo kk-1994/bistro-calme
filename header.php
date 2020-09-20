@@ -51,5 +51,3 @@
             </g>
         </svg>
     </header>
-</body>
-<html>
