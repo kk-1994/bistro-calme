@@ -25,4 +25,4 @@ add_theme_support( 'post-thumbnails' );
 /**
  * カスタムメニュー機能を使用可能にする
  */
-add_theme_support('menu');
+add_theme_support( 'menu' );
