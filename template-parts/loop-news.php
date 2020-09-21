@@ -17,4 +17,4 @@
         <?php the_excerpt(); ?>
         <p><a href="<?php the_permalink(); ?>">[続きを読む]</a></p>
     </div>
-</article>
+</article>                
