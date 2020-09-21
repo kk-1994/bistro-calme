@@ -74,11 +74,7 @@
 
                         <div class="article_body">
                             <div class="content">
-                                <p>BISTRO CALME では、新しいメニューを開発中です。</p>
-                                <p>
-                                    新しいメニューを提供するために、開店後に練習中です。スタッフから大好評のメニューもできてきました。<br>
-                                    来月にはご提供できると思います。お楽しみに。
-                                </p>
+                                <?php the_content(); ?>
                             </div>
                         </div>
 
