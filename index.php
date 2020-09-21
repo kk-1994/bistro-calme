@@ -12,7 +12,7 @@
                     <?php if ( have_posts() ); ?>
                         <?php while ( have_posts() ) : the_posts(); ?>
                             <div class="col-md-4">
-                                <?php get_template_part('template_parts/loop', 'news'); ?>
+                                <?php get_template_part('template-parts/loop', 'news'); ?>
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
