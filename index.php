@@ -9,7 +9,7 @@
                 <h2 class="main_title"><?php wp_title(''); ?></h2>
                 <div class="row">
 
-                    <?php if ( have_posts() ); ?>
+                    <?php if ( have_posts() ): ?>
                         <?php while ( have_posts() ) : the_posts(); ?>
                             <div class="col-md-4">
                                 <?php get_template_part('template-parts/loop', 'news'); ?>
