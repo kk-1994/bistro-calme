@@ -19,8 +19,12 @@
                 <div class="col-md-4">
                     <article id="post-<?php the_ID(); ?>" <?php post_class('news'); ?>>
                         <div class="news_pic">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/news_img-1.jpg" alt="">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if ( has_post_thumbnail()) : ?>
+                                    <?php the_post_thumbnail('medium'); ?>
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage_600x400.png" alt="">
+                                <?php endif; ?>
                             </a>
                         </div>
                         <div class="news_meta">
