@@ -24,9 +24,7 @@
                             </a>
                         </div>
                         <div class="news_meta">
-                            <ul class="post-categories">
-                                <li><a href="#">お知らせ</a></li>
-                            </ul>
+                            <?php the_category(); ?>
                             <time class="news_time" datetime="2019-00-00">2019年00月00日</time>
                         </div>
                         <h2 class="news_title"><a href="#">タイトルタイトルタイトルタイトル</a></h2>
