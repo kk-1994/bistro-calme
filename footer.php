@@ -3,7 +3,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_inner">
-                <nav>
+                <nav class="gnav">
                     <?php
                     $args = array(
                     'menu' => 'global-navigation',
