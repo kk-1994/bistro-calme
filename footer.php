@@ -3,11 +3,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_inner">
-                <nav class="gnav">
+                <nav>
                     <?php
                     $args = array(
                     'menu' => 'global-navigation',
-                    'menu-class' => '',
+                    'menu_class' => '',
                     'container' => false,
                     );
                     wp_nav_menu($args);
