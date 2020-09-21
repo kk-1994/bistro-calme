@@ -39,7 +39,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <a href="#" class="bnr" style="background-image: url('./assets/img/home/bnr_about@2x.jpg')">
+                    <a href="<?php echo get_permalink(30); ?>" class="bnr" style="background-image: url('./assets/img/home/bnr_about@2x.jpg')">
                         <div class="bnr_inner">
                             わたしたちについて<span>ABOUT</span>
                         </div>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <a href="#" class="bnr" style="background-image: url('./assets/img/home/bnr_access@2x.jpg')">
+                    <a href="<?php echo get_permalink(37); ?>" class="bnr" style="background-image: url('./assets/img/home/bnr_access@2x.jpg')">
                         <div class="bnr_inner">
                             アクセス<span>ACCESS</span>
                         </div>
