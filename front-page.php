@@ -25,7 +25,11 @@
             </div>
 
             <p class="sec_btn">
-                <a href="" class="btn btn-default">最新情報の一覧<i class="fas fa-angle-right"></i></a>
+                <?php
+                $news = get_term_by('slug', 'news', 'category');
+                $news_link = get_term_link($news, 'category');
+                ?>
+                <a href="<?php echo $news_link; ?>" class="btn btn-default">最新情報の一覧<i class="fas fa-angle-right"></i></a>
             </p>
 
         </div>
@@ -76,7 +80,7 @@
             </div>
 
             <div class="sec_btn">
-                <a href="" class="btn btn-default">メールフォーム<i class="fas fa-angle-right"></i></a>
+                <a href="<?php echo home_url('/contact/'); ?>" class="btn btn-default">メールフォーム<i class="fas fa-angle-right"></i></a>
             </div>
         </div>
     </section>
