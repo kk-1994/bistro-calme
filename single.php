@@ -61,14 +61,14 @@
             <div class="row">
                 <div class="col-12 col-md-9">
 
-                    <article class="article">
+            <?php if ( have_posts() ) : ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
                         <header class="article_header">
-                            <h2 class="article_title">タイトルタイトルタイトル</h2>
+                            <h2 class="article_title"><?php the_title(); ?></h2>
                             <div class="article_meta">
-                                <ul class="post-categories">
-                                    <li><a href="#">お知らせ</a></li>
-                                </ul>
-                                <time datetime="2019-1-1">2019年1月1日</time>
+                                <?php the_category(); ?>
+                                <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日'); ?></time>
                             </div>
                         </header>
 
@@ -87,6 +87,8 @@
                             <div class="postLink postLink-next"><a href="#">次の記事のタイトル<i class="fas fa-chevron-right"></i></a></div>
                         </div>
                     </article>
+                <?php endwhile; ?>
+            <?php endif; ?>
 
                 </div>
 
