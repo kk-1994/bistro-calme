@@ -10,6 +10,7 @@
                     <h2 class="main_title"><?php wp_time('Y年m月'); ?></h2>
                 <?php else: ?>
                     <h2 class="main_title"><?php wp_title(''); ?></h2>
+                <?php endif; ?>
                 <div class="row">
 
                     <?php if ( have_posts() ): ?>
