@@ -30,4 +30,4 @@ if ( is_home() ){
 
 <?php wp_footer(); ?>
 </body>
-<html>
+</html>
