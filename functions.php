@@ -26,3 +26,11 @@ add_theme_support( 'post-thumbnails' );
  * カスタムメニュー機能を使用可能にする
  */
 add_theme_support( 'menus' );
+
+add_filter('commnet_form_default_fields', 'my_commnet_form_default_fields');
+function my_comment_form_default_fields( $args ){
+    $args['author'] = ''; // 「名前」を削除
+    $args['email'] = ''; // 「メールアドレス」を削除
+    $args['url'] = ''; // 「サイト」を削除
+    return $args
+}
